@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ITF Simple Bank</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav>
+    <div class="id"><p>68070296</p></div>
+    <div class="main"><h2>ITF Website</h2></div>
+    <div class="week"><p>Week 14</p></div>
+  </nav>
+
+
+  <div class="container header">
+    <div class="main-line">
+      <img src="pic/Cry.png" alt="logo" class="logo" />
+      <div class="inline">
+        <h2>IT-ITF</h2>
+        <p>I LOVE ITF2025</p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="mainfunc">
+    <textarea id="log" readonly placeholder="Transaction logs will appear here..."></textarea>
+  </div>
+
+
+  <div class="container2">
+    <!-- Left -->
+    <section class="panel">
+      <h2>Account Overview</h2>
+
+      <div class="card">
+        <h3>Account Information</h3>
+        <div class="info">
+          <img src="pic/images.jpg" alt="profile" />
+          <div>
+            <p><strong>Name:</strong> Parid Inpitak</p>
+            <p><strong>Type:</strong> IT’23 @KMITL</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Balance Information</h3>
+        <div class="info">
+          <img src="pic/piechart.png" alt="user" />
+          <div class="inputs">
+            <label>Current account balance (THB):</label>
+            <input type="text" id="account-balance" value="1000" readonly />
+            <label>Current cash balance (THB):</label>
+            <input type="text" id="cash-balance" value="500" readonly />
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Bank Operation</h3>
+        <div class="info">
+          <img src="pic/4588475-200.png" alt="deposit" />
+          <div class="inputs">
+            <select id="operation">
+              <option value="deposit">Deposit</option>
+              <option value="withdraw">Withdraw</option>
+            </select>
+            <input type="number" id="amount" placeholder="Enter amount (THB)" />
+          </div>
+        </div>
+        <button class="btn" id="proceed-btn">Proceed</button>
+      </div>
+    </section>
+
+    <!-- Right -->
+    <section class="panel">
+      <h2>Financial Tools</h2>
+      <div class="card">
+        <h3>Currency Conversion</h3>
+        <div class="info">
+          <img src="pic/credit_card.png" alt="coins" />
+          <div class="inputs">
+            <label>Input balance:</label>
+            <input type="number" id="input-balance" placeholder="Enter amount" />
+            <label>Output balance:</label>
+            <input type="text" id="output-balance" readonly />
+            <label>Input currency:</label>
+            <div class="inline">
+              <select id="currency">
+                <option value="USD">USD → THB</option>
+                <option value="JPY">JPY → THB</option>
+                <option value="EUR">EUR → THB</option>
+              </select>
+              <button class="btn" id="convert-btn">Convert</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
